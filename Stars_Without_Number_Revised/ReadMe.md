@@ -2,14 +2,15 @@
 
 This sheet is created for use in Stars Without Number Revised Edition on Roll20.
 
-### Authors/Maintainers
+## Authors/Maintainers
 
 * [Karlinator](https://github.com/Karlinator)
 * [Jakob](https://github.com/joesinghaus)
 * [Panzer](https://app.roll20.net/users/2223776/panzer)
 
-### Contributors
+## Contributors
 
+* [Victor M. Suarez](https://github.com/svmnotn)
 * [MankiGames](https://github.com/MankiGames)
 * [Shadowriku](https://github.com/Shadowriku)
 * [RonaldZ](https://github.com/RonaldZ)
@@ -17,11 +18,11 @@ This sheet is created for use in Stars Without Number Revised Edition on Roll20.
 * [CoalPoweredPuppet](https://github.com/CoalPoweredPuppet)
 * Original First Edition sheet by [Kevin Searle](https://github.com/kevinsearle)
 
-### QA/Testing
+## QA/Testing
 
 * [tipsta](https://github.com/mistatipsta)
 
-### Feedback
+## Feedback
 
 Report any problems, suggestions, or features by [creating an issue](https://github.com/Karlinator/roll20-character-sheets/issues) on Github.
 
@@ -29,11 +30,48 @@ Report any problems, suggestions, or features by [creating an issue](https://git
 
 * Contributions are welcome at [the GitHub](https://github.com/Karlinator/roll20-character-sheets). Just open a pull request.
 * You will need to install [Node.js](https://nodejs.org), then run the following command in bash/cmd:
-	* npm install -g pug pug-cli sass jstransformer-uglify-es
-	* You may need to restart you computer.
-	* Then just make changes to the files in the Source folder, and use the file "build" or "pug_build.bat" and "sass_build.bat" depending on your OS.
+  * npm install -g pug pug-cli sass jstransformer-uglify-es
+  * You may need to restart you computer.
+  * Then just make changes to the files in the Source folder, and use the file "build" or "pug_build.bat" and "sass_build.bat" depending on your OS.
 
 ## Changelog
+
+### 2.4.2
+
+* Remove incorrect title text from uncommitted Magic Effort
+* Fix HP rolls for Heroic Characters looking at the wrong attribute
+* Fix the version upgrade code stopping early and thus not change the version number on the sheet.
+
+### 2.4.1
+
+* Fix Innate AC missing translation key.
+
+### 2.4.0
+
+* Add tracking of permanent System Strain.
+* Fix HP roll for Heroic characters.
+* Added a macro to calculate travel costs.
+* Codex of the Black Sun support!
+  * Magic changed to Know Magic and Use Magic.
+  * Sunblade skill and Fight skill added.
+  * Toggle between Adept, Arcanist, and Magister.
+  * Magic Effort for Adepts.
+  * Spell Slots for Magisters and Arcanists.
+  * Arcanists track if spells are prepared.
+  * Adepts have abilities.
+
+### 2.3.1
+
+* Fixed a bug causing the sheet to sometimes display an incorrect attack bonus for weapons.
+* Fixed missing base attack bonus for drone attacks.
+
+### 2.3.0
+
+* Added drone tab
+* Added weapon description data as well as armor descriptions
+* Added quantity for inventory, as well as proper support for Enc-1/3 gear
+* Added artifact armor and gear
+* Mech weapons now have range instead of ammo
 
 ### 2.2.0
 
@@ -54,17 +92,17 @@ Report any problems, suggestions, or features by [creating an issue](https://git
 ### 2.1.0
 
 * Additions
-	* Added option to disable modifier queries globally.
-	* Added button to roll hit points.
-	* Added weapon encumbrance tracking.
-	* Added ammo maximum for weapons.
-	* Weapon shock damage can now be toggled independent of base being 0 (for Unarmed Combatant).
-	* Added option for automatic ammo reduction (requires ChatSetAttr).
+  * Added option to disable modifier queries globally.
+  * Added button to roll hit points.
+  * Added weapon encumbrance tracking.
+  * Added ammo maximum for weapons.
+  * Weapon shock damage can now be toggled independent of base being 0 (for Unarmed Combatant).
+  * Added option for automatic ammo reduction (requires ChatSetAttr).
 * Bugfixes
-	* Attribute modifiers are now recalculated upon conversion from v1.6.2.
-	* Roll templates are no longer cut off when chat avatars are disabled.
-	* New NPC attacks should now receive the correct attack bonus.
-	* Line breaks in foci/technique/spell/cyberware descriptions now render correctly.
+  * Attribute modifiers are now recalculated upon conversion from v1.6.2.
+  * Roll templates are no longer cut off when chat avatars are disabled.
+  * New NPC attacks should now receive the correct attack bonus.
+  * Line breaks in foci/technique/spell/cyberware descriptions now render correctly.
 
 ### 2.0.1
 
@@ -74,14 +112,14 @@ Report any problems, suggestions, or features by [creating an issue](https://git
 ### 2.0.0
 
 * New, overhauled version of the sheet (rewritten in pug and sass)
-	* Complete sheet HTML/CSS has been re-done for a more compact look
-	* Edit/Display mode toggle at the top of the sheet
-	* Roll template overhauled
-	* Many attributes were renamed or otherwise reorganized (seamless conversion)
-	* Chat menus for easy access to all sheet macros
-	* Ship sheet now has tracking for power/mass/hardpoints, as well as weapon attacks
-	* NPC sheet now has repeating sections for attacks and special abilities
-	* Added i18n support
+  * Complete sheet HTML/CSS has been re-done for a more compact look
+  * Edit/Display mode toggle at the top of the sheet
+  * Roll template overhauled
+  * Many attributes were renamed or otherwise reorganized (seamless conversion)
+  * Chat menus for easy access to all sheet macros
+  * Ship sheet now has tracking for power/mass/hardpoints, as well as weapon attacks
+  * NPC sheet now has repeating sections for attacks and special abilities
+  * Added i18n support
 
 ### 1.6.2
 
